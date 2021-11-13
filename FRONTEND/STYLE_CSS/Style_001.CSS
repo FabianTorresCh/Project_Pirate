@@ -1,0 +1,280 @@
+/*-----------------------------------------------------------------------------
+PALETA DE COLORES
+
+VERDE CLARO 1 - PRINCIPAL / rgb(123, 193, 66)
+VERDE AGUAMARINA 1 PRINCIPAL / rgb(11, 151, 132)
+ROJO PERLADO 1 / rgb(255, 67, 64)
+AZUL CLARO 1 / rgb(75, 135, 255)
+AZUL OSCURO PROFUNDO 1 / rgb(30, 38, 73)
+NEGRPO PROFUNDO 1 / rgb(20, 23, 22)
+*/
+
+
+/*-----------------------------------------------------------------------------
+ELEMENT GENERAL */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+/*-----------------------------------------------------------------------------
+ELEMENT BODY */
+
+
+/*-----------------------------------------------------------------------------
+ELEMENT TABLE */
+
+table {
+    background-color: rgb(255, 0, 0);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+tr {
+    background-color: rgb(255, 0, 221);
+    padding: 20px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(0, 153, 158);
+    text-align: center;
+    padding: 10px;
+    width: 30%;
+    height: 100px;
+}
+
+td {
+    background-color: rgb(123, 193, 66);
+    text-align: center;
+    padding: 10px;
+    width: 10%;
+    height: 75px;
+}
+
+
+/*-----------------------------------------------------------------------------
+ELEMENT DIV */
+
+    /* xxxxxxxxxxx  
+    div GENERAL */
+
+
+div.row {
+    text-align: center;
+    
+    align-items: center;
+}
+
+    /* xxxxxxxxxxx
+    div SUPERIOR */
+div.DivClassSectionUpper {
+    /*COLOR DE FONDO*/
+    background-color: rgb(123, 193, 66);
+    /*ANCHO DE BOTON EN % - ANCHO DINAMICO SEGUN TAMAÑO DEL CONTENEDOR*/
+    width: 100%;
+    /*ALTURA DE BOTON EN PX - TAMAÑO FIJO SEGUN LA RESOLUCION*/
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url("../IMAGE/9f4I8Wh-gimp-backgrounds.png")top;
+    background-position: center;
+    background-repeat: no-repeat;  
+    background-size: cover;
+    height: 100%;
+    max-width: 100%;
+    
+}
+
+
+div.col-md-6{
+    background-color: rgb(20, 23, 22);
+    padding: 20px;
+}
+
+div.align-self-center {
+    
+    border-radius: 10px;
+}
+
+
+
+div.form-group {
+   
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    block-size: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* div INFERIOR */
+div.DivClassSecctionLower {
+    /*COLOR DE FONDO*/
+    background-color: rgb(123, 193, 66);
+    width: 100%;
+    height: 75px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------------------------------------------------------------------------
+ELEMENT BUTTON */
+
+button.ButtonClassLogin {
+    background-color: rgb(11, 151, 132); /*COLOR DE FONDO DEL COLOR*/
+    width: 75%; /*ANCHO DE BOTON EN % - ANCHO DINAMICO SEGUN TAMAÑO DEL CONTENEDOR*/
+    height: 50px; /*ALTURA DE BOTON EN PX - TAMAÑO FIJO SEGUN LA RESOLUCION*/
+    border-radius: 10px; /*REDONDEA LAS ESQUINAS DEL BOTON, SE DEFINE COMO BORDE FIJO*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*INDICA SI LA FUENTE ESTA EN NEGRILLA O NO*/
+    font-weight: bolder;
+    /*COLOR DE FUENTE O LETRA*/
+    color: rgb(255, 255, 255);
+    /*GROSOR DE BORDE DE BOTON*/
+    border: 0;
+}
+
+/*-----------------------------------------------------------------------------
+ELEMENT CAJAS */
+
+input.form-control {
+    /*font-weight: bolder;*/
+    /*COLOR DE FONDO DEL COLOR*/
+    background-color: rgba(22, 22, 24, 0.233);
+    /*ANCHO DE BOTON EN % - ANCHO DINAMICO SEGUN TAMAÑO DEL CONTENEDOR*/
+    width: 75%;
+    /*ALTURA DE BOTON EN PX - TAMAÑO FIJO SEGUN LA RESOLUCION*/
+    height: 50px;
+    /*COLOR DE FUENTE O LETRA*/
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+/*-----------------------------------------------------------------------------
+ELEMENT IMAGEN */
+
+img.ClassImageStarup{
+    /*ANCHO DE BOTON EN % - ANCHO DINAMICO SEGUN TAMAÑO DEL CONTENEDOR*/
+    width: 100%;
+    border-radius: 10px;
+}
+
+img.ClassLogMinTic {
+    height: 100%;
+}
+
+img.ClassLogMinTic2022 {
+    height: 100%;
+}
+
+img.ClassLogUnvBos {
+    height: 100%;
+}
+
+img.ClassUserGroup {
+    height: 100%;
+}
+
+img.ClassLogoLoading {
+    height: 75px;
+}
+
+/*-----------------------------------------------------------------------------
+ELEMENT DE TEXTO */
+h3.ClassTitle {
+    font-weight: bolder;
+}
+
+/*----------------------------------------------------------------------------
+ELEMENTO USUARIO */
+.usuario {
+    font-weight: bolder;
+    background-color: rgb(75, 135, 255);
+    width: 75%;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+
+.footer-w{
+   
+    min-height: 100px;
+    margin-left: 15%;
+   
+}
+
+
+.label-color {
+    color: rgb(145, 135, 135) !important;
+    text-align: center;
+}
+
+.icon{
+    width: 20px;
+}
+
+
+
+.login-bck {
+    background-color: rgba(0, 0, 0, 0.658);
+}
+
+.login {     
+    
+    padding: 15px;   
+    width: 400px;
+    margin-left: 15%;
+    background-color:transparent !important;
+    margin-top: 8rem !important;
+    
+
+}
+
+.input {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 25px;
+    height: 40px;
+    border-radius: 15px;
+    outline: 0;
+    }
+          
+    .input-b {
+    border: 1px solid #bbb;
+    padding: 0 0 0 10px;
+    font-size: 14px;
+    }
+a{
+    text-decoration: none !important;
+    color: rgb(145, 135, 135) !important;
+    
+}
+
+.input-log{
+    background-color: #0000006e;
+}
+
+.button-login{
+    background-color: #d62626;
+    color: white;
+}
+
+.margin-log {
+    margin-top:0.5rem;
+    margin-left: 2.5rem;
+}

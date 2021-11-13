@@ -1,0 +1,248 @@
+/*
+INFORMACION DE DOCUMENTO
+
+FUENTE DE TEXTO: [Verdana, Geneva, Tahoma, sans-serif]
+
+PALETA DE COLORES:
+    NARANJA 1           : #FC4B08
+    NARANJA 2           : #FF2301
+    GRIS FONDO          : #243b55
+    GRIS OSCURO FONDO   : #141e30
+*/
+
+
+
+/* ABSOLUTE STYLE */
+*{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------
+HTML - ESTILO DE DOCUMENTO */
+/* TAMAÑO ABSOLUTO PARA DIFERENTES VISTAS Y DE TAMAÑO VARIABLE */
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------
+BODY - ESTILO DE CUERPO */
+body {
+    margin:0;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* REDUNDANCIA DE CODIGO */
+    /*FONDO OPCION 1*/
+    /*background: linear-gradient(#FF2301, #243b55);*/
+    /*FONDO OPCION 2*/
+    background: url("../IMAGE/FONDO_001.jpg") top;
+}
+
+img.ImgClassIcono {
+    height: 50px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------
+HR - LINEA DIVISORIA */
+hr {
+    height: 5px;
+    background-color: #141e30;
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------
+H# - ESTILOS DE SECCION DE CARGA*/
+h1.H1ClassTitleWhite {
+    margin: 0px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h3.H3ClassText1 {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------------------------------
+DIV - SECCIONES DE CARGA */
+
+    /* DIV - CAJA DE CARGA*/
+div.DivClassBoxContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px; /* TAMAÑO FIJO DE DIV */
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+    /* DIV - SECCION DE CARGA*/
+div.DivClassBoxSection {
+    position: relative;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------
+LABEL - CASILLA */
+
+label.LabelClassNote {
+    position: absolute;
+    padding: 0px;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    border-bottom: 5px solid #fff;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------
+INPUNT - ESTILOS DE ACCION ENTRADA */
+
+    /* INPUT - SELECT FILE */
+input.InpuntClassFile {
+    padding: 0px;
+    margin: 25px;
+    width: 75%;
+    border-radius: 15px;
+    background:#FC4B08;
+}
+
+    /* INPUT - ACTION UPLOAD */
+input.InpuntClassAccRed {
+    width: 100%;
+    padding: 0px; /* SIN ESPACIO EN EL CONTORNO */
+    font-size: 25px; /* IR A FOCUS,VALID */
+    color: rgb(0, 0, 0); /* IR A FOCUS,VALID */
+    margin-bottom: 0px;
+    border: none;
+    /*border-bottom: 10px solid #fff;*/
+    outline: none;
+    background: transparent;
+}
+
+    /* INPUT - ACTION UPLOAD */
+input.InpuntClassAccRed:focus, 
+input.InpuntClassAccRed:valid {
+    top: 0px;
+    left: 0px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 100%; /* TAMAÑO DE LETRA VARIABLE*/
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------
+A - FLUJO DE CONTENIDO */
+
+    /* A - STYLE1 RED INPUT*/
+    a.AClassMarkerRed {
+        width: 50%; /* ANCHO VARIABLE POR POSIBLE CAMBIO DE PARAMETROS DE DIV CONTENEDOR*/
+        position: relative;
+        display: inline-block;
+        margin: 10px; /* MARGEN O ESPASIAMIENTO */
+        padding: 10px; /* TAMAÑO INTERNO */
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: 0.5s;
+        letter-spacing: 4px;
+        
+    }
+    
+        /* A - STYLE2 RED INPUT*/
+    a.AClassMarkerRed:hover {
+        background: #0008ff;
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        box-shadow:
+            0 0 5px #0008ff,
+            0 0 25px #0008ff,
+            0 0 50px #0008ff,
+            0 0 100px #0008ff;
+        
+    }
+
+
+/* ------------------------------------------------------------------------------------------------------------
+SPAN - BORDE INTERACTIVO */
+
+    /*SPAN - DEFINICION DE CUERPO*/
+span.SpanClassBorderRed {
+    position: absolute;
+    display: block;
+}
+
+    /* SPAN - ESTILO E INTERACCION DE BORDE*/
+span.SpanClassBorderRed:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #0008ff);
+    animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1 {
+    0% {left: -100%;}
+    50%,100% {left: 100%;}
+}
+    /* SPAN - ESTILO E INTERACCION DE BORDE*/
+span.SpanClassBorderRed:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #0008ff);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+@keyframes btn-anim2 {
+    0% {top: -100%;}
+    50%,100% {top: 100%;}
+}
+    /* SPAN - ESTILO E INTERACCION DE BORDE*/
+span.SpanClassBorderRed:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #0008ff);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+@keyframes btn-anim3 {
+    0% {right: -100%;}
+    50%,100% {right: 100%;}
+}
+    /* SPAN - ESTILO E INTERACCION DE BORDE*/
+span.SpanClassBorderRed:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #0008ff);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+@keyframes btn-anim4 {
+    0% {bottom: -100%;}
+    50%,100% {bottom: 100%;}
+}
