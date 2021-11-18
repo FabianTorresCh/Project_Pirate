@@ -9,7 +9,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@Document(collection="User")
+@Document(collection="collection_user")
 public class User {
 	
 	private long cedula_usuario;
