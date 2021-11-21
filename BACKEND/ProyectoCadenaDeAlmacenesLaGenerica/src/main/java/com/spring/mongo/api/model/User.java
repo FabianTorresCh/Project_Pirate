@@ -1,7 +1,7 @@
 package com.spring.mongo.api.model;
 
+//IMPORT ELEMENT
 import org.springframework.data.mongodb.core.mapping.Document;
-
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -10,14 +10,18 @@ import lombok.ToString;
 @Setter
 @ToString
 @Document(collection="collection_user")
+
+//BODY MODEL
 public class User {
 	
+	// ELEMENT MODEL
 	private long cedula_usuario;
 	private String email_usuario;
 	private String nombre_usuario;
 	private String password;
 	private String usuario;
 	
+	// SET AND GET
 	public long getCedula_usuario() {
 		return cedula_usuario;
 	}

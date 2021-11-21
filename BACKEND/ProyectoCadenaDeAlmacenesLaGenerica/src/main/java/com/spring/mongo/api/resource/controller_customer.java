@@ -52,7 +52,7 @@ public class controller_customer {
 	@DeleteMapping("/delete_customer_byid/{customerbyid}")
 	public String action_delete_customer_byid (long customerbyid) {
 		obj_repository_customer.deleteById(customerbyid);
-		return "DELETE CUSTOMER BY ID: "+customerbyid;
+		return "DELETE CUSTOMER BY ID: ["+customerbyid+"]";
 	}
 	
 	
