@@ -1,29 +1,32 @@
 package com.spring.mongo.api.model;
 
+//IMPORT ELEMENT
 import org.springframework.data.mongodb.core.mapping.Document;
-
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
 @Getter
 @Setter
 @ToString
-@Document(collection="Products")
-public class Product {
+@Document(collection="collection_product") // NAME COLLECTION
+
+//BODY MODEL
+public class model_product {
 	
-	private long codigo_producto;
+	// ELEMENT MODEL
+	private long id;
 	private String nombre_producto;
 	private long nit_proveedor;
 	private double precio_compra;
 	private double iva_compra;
 	private double precio_venta;
 	
-	public long getCodigo_producto() {
-		return codigo_producto;
+	// SET AND GET
+	public long getId() {
+		return id;
 	}
-	public void setCodigo_producto(long codigo_producto) {
-		this.codigo_producto = codigo_producto;
+	public void setId(long id) {
+		this.id = id;
 	}
 	public String getNombre_producto() {
 		return nombre_producto;

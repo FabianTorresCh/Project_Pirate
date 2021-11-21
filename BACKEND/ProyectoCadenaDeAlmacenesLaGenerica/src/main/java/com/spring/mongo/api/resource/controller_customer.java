@@ -38,7 +38,6 @@ public class controller_customer {
 	// GET LIST CUSTOMER
 	@GetMapping("/get_list_customer")
 	public List<model_customer> action_get_list_customer() {
-		System.out.println("LIST CUSTOMER: "+obj_repository_customer.findAll().toString());
 		return obj_repository_customer.findAll();
 	}
 	

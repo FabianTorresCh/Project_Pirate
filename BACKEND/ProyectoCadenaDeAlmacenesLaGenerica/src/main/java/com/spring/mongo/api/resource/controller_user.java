@@ -13,18 +13,18 @@ import org.springframework.web.bind.annotation.RestController;
 //IMPORT MODEL
 import com.spring.mongo.api.model.model_user;
 //IMPORT REPOSITORY
-import com.spring.mongo.api.repository.UserRepository;
+import com.spring.mongo.api.repository.repository_user;
 
 //BODY CONTROLLER
 @RestController
-public class UserController {
+public class controller_user {
 
 	// OBJECT REPOSITORY USER
 	@Autowired
-	private UserRepository repository;
+	private repository_user repository;
 
 	// ADD USER
-	@PostMapping("/addUSer")
+	@PostMapping("/add_user")
 	public String registerUser(@RequestBody model_user user) {
 		repository.save(user);
 		return "ADD USER: "
@@ -36,19 +36,19 @@ public class UserController {
 	}
 
 	// GET LIST CUSTOMER
-	@GetMapping("/findAllUsers")
+	@GetMapping("/get_list_user")
 	public List<model_user> getUSers() {
 		return repository.findAll();
 	}
 
 	// GET CUSTOMER BY ID 
-	@GetMapping("/findAllUsers/{id}")
+	@GetMapping("/get_user_byid/{id}")
 	public Optional<model_user> getUSersById(@PathVariable long id) {
 		System.out.println("\n>> >> USER ID: "+ id);		
 		return repository.findById(id);
 	}
 
-	@DeleteMapping("/delete_user/{id}")
+	@DeleteMapping("/delete_user_byid/{id}")
 	public String deleteUser(@PathVariable long id) {
 		repository.deleteById(id);
 		return "DELETE USER: " + id;

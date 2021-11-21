@@ -5,27 +5,26 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
 @Getter
 @Setter
 @ToString
-@Document(collection="collection_customer")
+@Document(collection="collection_customer") // NAME COLLECTION
 
 // BODY MODEL
 public class model_customer {
 
 	// ELEMENT MODEL
-	private long id;
+	private int id;
 	private String customer_namefull;
 	private String customer_address;
 	private int customer_phone;
 	private String customer_email;
 	
 	// SET AND GET
-	public long getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getCustomer_namefull() {
