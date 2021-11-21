@@ -6,6 +6,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import com.spring.mongo.api.model.model_customer;
 
 // BODY REPOSITORY
-public interface repository_customer extends MongoRepository <model_customer, Long>{
+public interface repository_customer extends MongoRepository <model_customer, Integer>{
 
 }

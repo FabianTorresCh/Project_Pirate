@@ -28,7 +28,7 @@ public class controller_customer {
 	public String action_add_customer (@RequestBody model_customer obj_model_customer) {
 		obj_repository_customer.save(obj_model_customer);
 		return "ADD CUSTOMER: "
-				+ "\nCUSTOMER ID: 			["+obj_model_customer.getCustomer_id()+"]"
+				+ "\nCUSTOMER ID: 			["+obj_model_customer.getId()+"]"
 				+ "\nCUSTOMER FULL NAME: 	["+obj_model_customer.getCustomer_namefull()+"]"
 				+ "\nCUSTOMER ADDRESS: 		["+obj_model_customer.getCustomer_address()+"]"
 				+ "\nCUSTOMER PHONE: 		["+obj_model_customer.getCustomer_phone()+"]"
@@ -44,13 +44,14 @@ public class controller_customer {
 	
 	// GET CUSTOMER BY ID
 	@GetMapping("/get_customer_byid/{customerbyid}")
-	public Optional<model_customer> action_get_customer_byid (@PathVariable long customerbyid) {
+	public Optional<model_customer> action_get_customer_byid (@PathVariable int customerbyid) {
+		System.out.println("\n>> >> CUSTOMER ID: "+ customerbyid);	
 		return obj_repository_customer.findById(customerbyid);
 	}
 
 	// DELETE CUSTOMER BY ID
 	@DeleteMapping("/delete_customer_byid/{customerbyid}")
-	public String action_delete_customer_byid (long customerbyid) {
+	public String action_delete_customer_byid (@PathVariable int customerbyid) {
 		obj_repository_customer.deleteById(customerbyid);
 		return "DELETE CUSTOMER BY ID: ["+customerbyid+"]";
 	}

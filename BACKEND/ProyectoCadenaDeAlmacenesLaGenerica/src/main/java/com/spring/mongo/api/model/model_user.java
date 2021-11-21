@@ -12,21 +12,21 @@ import lombok.ToString;
 @Document(collection="collection_user")
 
 //BODY MODEL
-public class User {
+public class model_user {
 	
 	// ELEMENT MODEL
-	private long cedula_usuario;
+	private long id;
 	private String email_usuario;
 	private String nombre_usuario;
 	private String password;
 	private String usuario;
 	
 	// SET AND GET
-	public long getCedula_usuario() {
-		return cedula_usuario;
+	public long getId() {
+		return id;
 	}
-	public void setCedula_usuario(long cedula_usuario) {
-		this.cedula_usuario = cedula_usuario;
+	public void setId(long id) {
+		this.id = id;
 	}
 	public String getEmail_usuario() {
 		return email_usuario;

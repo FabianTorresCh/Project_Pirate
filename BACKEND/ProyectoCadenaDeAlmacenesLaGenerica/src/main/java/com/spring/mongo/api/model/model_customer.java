@@ -15,18 +15,18 @@ import lombok.ToString;
 public class model_customer {
 
 	// ELEMENT MODEL
-	private long customer_id;
+	private long id;
 	private String customer_namefull;
 	private String customer_address;
 	private int customer_phone;
 	private String customer_email;
 	
 	// SET AND GET
-	public long getCustomer_id() {
-		return customer_id;
+	public long getId() {
+		return id;
 	}
-	public void setCustomer_id(long customer_id) {
-		this.customer_id = customer_id;
+	public void setId(long id) {
+		this.id = id;
 	}
 	public String getCustomer_namefull() {
 		return customer_namefull;
