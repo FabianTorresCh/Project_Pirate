@@ -4,6 +4,7 @@ package com.spring.mongo.api.resource;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +17,7 @@ import com.spring.mongo.api.model.model_supplier;
 import com.spring.mongo.api.repository.repository_supplier;
 
 //BODY CONTROLLER
+@CrossOrigin
 @RestController
 public class controller_supplier {
 
@@ -24,8 +26,8 @@ public class controller_supplier {
 	private repository_supplier obj_repository_supplier;
 	
 	// ADD SUPPLIER
-	@PostMapping("/add_suppliar")
-	public String action_add_suppliar (@RequestBody model_supplier obj_model_supplier) {
+	@PostMapping("/add_supplier")
+	public String action_add_supplier (@RequestBody model_supplier obj_model_supplier) {
 		obj_repository_supplier.save(obj_model_supplier);
 		return "ADD SUPPLIER: "
 		+ "\nSUPPLIER ID: 				["+obj_model_supplier.getId()+"]"
@@ -39,30 +41,22 @@ public class controller_supplier {
 	}
 		
 	// GET LIST SUPPLIER
-	@GetMapping("/get_list_suppliar")
+	@GetMapping("/get_list_supplier")
 	public List<model_supplier> action_get_list_supplier () {
 		return obj_repository_supplier.findAll();
-	}
+	}	
 		
 	// GET SUPPLIER BY ID
-	@GetMapping("/get_suppliar_byid/{suppliarbyid}")
-	public Optional<model_supplier> action_get_suppliar_byid (@PathVariable int suppliarbyid) {
-		System.out.println("\n>> >> CUSTOMER ID: "+ suppliarbyid);	
-		return obj_repository_supplier.findById(suppliarbyid);
+	@GetMapping("/get_supplier_byid/{supplierbyid}")
+	public Optional<model_supplier> action_get_supplier_byid (@PathVariable int supplierbyid) {
+		System.out.println("\n>> >> CUSTOMER ID: "+ supplierbyid);	
+		return obj_repository_supplier.findById(supplierbyid);
 	}
 	
 	// DELETE SUPPLIER BY ID
-	@DeleteMapping("/delete_suppliar_byid/{suppliarbyid}")
-	public String action_delete_suppliar_byid (@PathVariable int suppliarbyid) {
-		obj_repository_supplier.deleteById(suppliarbyid);
-		return "DELETE SUPPLIER BY ID: ["+suppliarbyid+"]";
+	@DeleteMapping("/delete_supplier_byid/{supplierbyid}")
+	public String action_delete_supplier_byid (@PathVariable int supplierbyid) {
+		obj_repository_supplier.deleteById(supplierbyid);
+		return "DELETE SUPPLIER BY ID: ["+supplierbyid+"]";
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 }
