@@ -14,8 +14,7 @@ import lombok.ToString;
 public class model_supplier {
 
 	// ELEMENT MODEL
-	private int id;
-	private int supplier_nit;
+	private long id;
 	private int supplier_nit_digit;
 	private String supplier_namefull;
 	private String supplier_address;
@@ -24,17 +23,11 @@ public class model_supplier {
 	private String supplier_type;
 	
 	// SET AND GET
-	public int getId() {
+	public long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
-	}
-	public int getSupplier_nit() {
-		return supplier_nit;
-	}
-	public void setSupplier_nit(int supplier_nit) {
-		this.supplier_nit = supplier_nit;
 	}
 	public int getSupplier_nit_digit() {
 		return supplier_nit_digit;

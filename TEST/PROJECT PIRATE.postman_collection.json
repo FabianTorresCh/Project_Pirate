@@ -1,0 +1,658 @@
+{
+	"info": {
+		"_postman_id": "c6d298aa-9042-4ee0-b96b-03d3b1e8a7d6",
+		"name": "PROJECT PIRATE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FOLDER CUSTOMER",
+			"item": [
+				{
+					"name": "CUSTOMER - ADD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1000,\r\n    \"customer_namefull\":\"CLIENTE 1\",\r\n    \"customer_address\":\"DIRECCION CLIENTE 1\",\r\n    \"customer_phone\":11111,\r\n    \"customer_email\":\"CLIENTE1@CORREO.COM\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/add_customer",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"add_customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CUSTOMER - GET AS LIST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/get_list_customer",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"get_list_customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CUSTOMER - GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/get_customer_byid/1000",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"get_customer_byid",
+								"1000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CUSTOMER - DELETE BY ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/delete_customer_byid/1000",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"delete_customer_byid",
+								"1000"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FOLDER PRODUCT",
+			"item": [
+				{
+					"name": "PRODUCT - ADD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1000,\r\n    \"nombre_producto\":\"PROVEEDOR 1\",\r\n    \"nit_proveedor\": 900100100,\r\n    \"precio_compra\":100,\r\n    \"iva_compra\":0.19,\r\n    \"precio_venta\":119\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/add_product",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"add_product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PRODUCT - GET AS LIST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/get_list_product",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"get_list_product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PRODUCT - GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/get_product_byid/1000",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"get_product_byid",
+								"1000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PRODUCT - DELETE BY ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/delete_product_byid/1000",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"delete_product_byid",
+								"1000"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FOLDER SALE DETAIL",
+			"item": [
+				{
+					"name": "SALE DETAIL - ADD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1000,\r\n    \"sale_invoice_id\":1000,\r\n    \"sale_date\": \"2021-11-28\",\r\n    \"sale_store_id\":1000,\r\n    \"sale_user_id\":1000,\r\n    \"sale_customer_id\":1000,\r\n    \"sale_product_id\":1000,\r\n    \"sale_product_name\":\"PPRODUCTO 1\",\r\n    \"sale_product_price_buy\":1000,\r\n    \"sale_product_iva\":0.19,\r\n    \"sale_product_price_sale\":1190,\r\n    \"sale_produc_quantity\":1,\r\n    \"sale_total\":1190\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/add_sale_detail",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"add_sale_detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SALE DETAIL - GET AS LIST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/get_list_sale_detail",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"get_list_sale_detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SALE DETAIL - GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/get_sale_detail_by_operation_number/1000",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"get_sale_detail_by_operation_number",
+								"1000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SALE DETAIL - DELETE BY ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/delete_sale_detail_by_operation_number/1000",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"delete_sale_detail_by_operation_number",
+								"1000"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FOLDER SALE REPORT",
+			"item": [
+				{
+					"name": "SALE REPORT - ADD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1000,\r\n    \"s_report_sale_date\":\"2021-11-28\",\r\n    \"s_report_store_id\": 1000,\r\n    \"s_report_user_id\":1000,\r\n    \"s_report_customer_id\":1000,\r\n    \"s_report_sale_total\":1000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/add_sale_report",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"add_sale_report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SALE REPORT - GET AS LIST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/get_list_sale_report",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"get_list_sale_report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SALE REPORT - GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/get_sale_report_by_invoice_id/1000",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"get_sale_report_by_invoice_id",
+								"1000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SALE REPORT - DELETE BY ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/delete_sale_report_by_invoice_id/1000",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"delete_sale_report_by_invoice_id",
+								"1000"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FOLDER STORE",
+			"item": [
+				{
+					"name": "STORE - ADD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1000,\r\n    \"store_namefull\":\"NAME STORE 1\",\r\n    \"store_city\": \"BOGOTA\",\r\n    \"store_address\":\"DIRECCION 1\",\r\n    \"store_email\":\"TIENDA@CORREO.COM\",\r\n    \"store_phone\":11111\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/add_store",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"add_store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "STORE - GET AS LIST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/get_list_store",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"get_list_store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "STORE - GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/get_store_by_id/1000",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"get_store_by_id",
+								"1000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "STORE - DELETE BY ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/delete_store_by_id/1000",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"delete_store_by_id",
+								"1000"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FOLDER SUPPLIER",
+			"item": [
+				{
+					"name": "SUPPLIER - ADD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1000,\r\n    \"supplier_nit\":900100100,\r\n    \"supplier_nit_digit\": 2,\r\n    \"supplier_namefull\":\"PROVEEDOR 1\",\r\n    \"supplier_address\":\"DIRECCION PROVEEDOR 1\",\r\n    \"supplier_email\":\"PROVEEDO1@CORREO.COM\",\r\n    \"supplier_phone\":11111,\r\n    \"supplier_type\":\"ALIMENTOS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/add_supplier",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"add_supplier"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SUPPLIER- GET AS LIST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/get_list_supplier",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"get_list_supplier"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SUPPLIER - GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/get_supplier_byid/1000",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"get_supplier_byid",
+								"1000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SUPPLIER - DELETE BY ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/delete_supplier_byid/1000",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"delete_supplier_byid",
+								"1000"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FOLDER USER",
+			"item": [
+				{
+					"name": "USER - ADD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1000,\r\n    \"email_usuario\":\"usuario1@correo.com\",\r\n    \"nombre_usuario\":\"usuario 1\",\r\n    \"password\":\"11111\",\r\n    \"usuario\":\"ventas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/add_user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"add_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USER - GET AS LIST",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/get_list_user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"get_list_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USER - GET BY ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/get_user_byid/1000",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"get_user_byid",
+								"1000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USER - DELETE BY ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/delete_user_byid/1000",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"delete_user_byid",
+								"1000"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

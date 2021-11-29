@@ -28,11 +28,11 @@ public class controller_customer {
 	public String action_add_customer (@RequestBody model_customer obj_model_customer) {
 		obj_repository_customer.save(obj_model_customer);
 		return "ADD CUSTOMER: "
-				+ "\nCUSTOMER ID: 			["+obj_model_customer.getId()+"]"
-				+ "\nCUSTOMER FULL NAME: 	["+obj_model_customer.getCustomer_namefull()+"]"
-				+ "\nCUSTOMER ADDRESS: 		["+obj_model_customer.getCustomer_address()+"]"
-				+ "\nCUSTOMER PHONE: 		["+obj_model_customer.getCustomer_phone()+"]"
-				+ "\nCUSTOMER EMAIL: 		["+obj_model_customer.getCustomer_email()+"]";
+			+ "\nCUSTOMER ID: 			["+obj_model_customer.getId()+"]"
+			+ "\nCUSTOMER FULL NAME: 	["+obj_model_customer.getCustomer_namefull()+"]"
+			+ "\nCUSTOMER ADDRESS: 		["+obj_model_customer.getCustomer_address()+"]"
+			+ "\nCUSTOMER PHONE: 		["+obj_model_customer.getCustomer_phone()+"]"
+			+ "\nCUSTOMER EMAIL: 		["+obj_model_customer.getCustomer_email()+"]";
 	}
 	
 	// GET LIST CUSTOMER
@@ -54,6 +54,5 @@ public class controller_customer {
 		obj_repository_customer.deleteById(customerbyid);
 		return "DELETE CUSTOMER BY ID: ["+customerbyid+"]";
 	}
-	
 	
 }
