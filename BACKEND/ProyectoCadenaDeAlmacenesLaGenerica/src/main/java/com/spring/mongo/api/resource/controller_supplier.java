@@ -57,11 +57,4 @@ public class controller_supplier {
 		return "DELETE SUPPLIER BY ID: ["+suppliarbyid+"]";
 	}
 	
-	
-	
-	
-	
-	
-	
-	
 }

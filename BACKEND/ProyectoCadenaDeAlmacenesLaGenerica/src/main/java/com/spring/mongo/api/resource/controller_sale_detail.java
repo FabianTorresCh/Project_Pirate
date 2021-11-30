@@ -28,8 +28,13 @@ public class controller_sale_detail {
 	public String action_add_sale_detail (@RequestBody model_sale_detail obj_model_sale_detail) {
 		obj_repository_sale_detail.save(obj_model_sale_detail);
 		return "ADD SALE DETAIL: "
-			+ "\nOPERATION ID:	["+obj_model_sale_detail.getId()+"]" // OPERATION NUMBER (ID)
-			+ "\nINVOICE ID:		["+obj_model_sale_detail.getSale_invoice_id()+"]";
+			+ "\nSALE DETAIL INVOICE ID:			["+obj_model_sale_detail.getId()+"]" // OPERATION NUMBER (ID)
+			+ "\nSALE DETAIL DATE:					["+obj_model_sale_detail.getSale_date()+"]"
+			+ "\nSALE DETAIL STORE ID:				["+obj_model_sale_detail.getSale_store_id()+"]"
+			+ "\nSALE DETAIL USER ID:				["+obj_model_sale_detail.getSale_user_id()+"]"
+			+ "\nSALE DETAIL CUSTOMER ID:		["+obj_model_sale_detail.getSale_customer_id()+"]"
+			+ "\nSALE DETAIL OPERATION:			["+obj_model_sale_detail.getList_sale_operation()+"]"
+			+ "\nSALE DETAIL TOTAL:					["+obj_model_sale_detail.getSale_total()+"]";
 	}
 	
 	// GET LIST SALE DETAIL

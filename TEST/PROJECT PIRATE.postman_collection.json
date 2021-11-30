@@ -103,7 +103,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\":1000,\r\n    \"nombre_producto\":\"PROVEEDOR 1\",\r\n    \"nit_proveedor\": 900100100,\r\n    \"precio_compra\":100,\r\n    \"iva_compra\":0.19,\r\n    \"precio_venta\":119\r\n}",
+							"raw": "{\r\n    \"id\":9000,\r\n    \"nombre_producto\":\"PROVEEDOR 9\",\r\n    \"nit_proveedor\": 900100100,\r\n    \"precio_compra\":900,\r\n    \"iva_compra\":0.19,\r\n    \"precio_venta\":1071\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -191,7 +191,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\":1000,\r\n    \"sale_invoice_id\":1000,\r\n    \"sale_date\": \"2021-11-28\",\r\n    \"sale_store_id\":1000,\r\n    \"sale_user_id\":1000,\r\n    \"sale_customer_id\":1000,\r\n    \"sale_product_id\":1000,\r\n    \"sale_product_name\":\"PPRODUCTO 1\",\r\n    \"sale_product_price_buy\":1000,\r\n    \"sale_product_iva\":0.19,\r\n    \"sale_product_price_sale\":1190,\r\n    \"sale_produc_quantity\":1,\r\n    \"sale_total\":1190\r\n}",
+							"raw": "{\r\n    \"id\":1000,\r\n    \"sale_date\": \"2021-11-28\",\r\n    \"sale_store_id\":1000,\r\n    \"sale_user_id\":1000,\r\n    \"sale_customer_id\":1000,\r\n    \"list_sale_operation\":[\r\n        {\r\n            \"sale_product_id\":1000,\r\n            \"sale_product_name\":\"PPRODUCTO 1\",\r\n            \"sale_product_price_buy\":1000,\r\n            \"sale_product_iva\":0.19,\r\n            \"sale_product_price_sale\":1190,\r\n            \"sale_produc_quantity\":1\r\n        },\r\n        {\r\n            \"sale_product_id\":2000,\r\n            \"sale_product_name\":\"PPRODUCTO 2\",\r\n            \"sale_product_price_buy\":100,\r\n            \"sale_product_iva\":0.19,\r\n            \"sale_product_price_sale\":119,\r\n            \"sale_produc_quantity\":2\r\n        }\r\n    ],\r\n    \"sale_total\":1428\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
