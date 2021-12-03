@@ -56,11 +56,7 @@ public class controller_sale_report {
 		return "DELETE SALE REPORT BY INVOICE ID: ["+sale_report_by_invoice_id+"]";
 	}
 	
-	
-	
-	
-	
-	/*
+	/* PENDIENTE PARA AGREGAR ABUSQUEDA AVANZADA
 	@Query("{'active':true}")
 List<Book> findAll();
 
@@ -69,8 +65,6 @@ List<Book> findPositionalParameters(String author, String category);
 
 @Query("{'author' : :#{#author}, 'category' : :#{#category}}")
 List<Book> findNamedParameters(@Param("author") String author, @Param("category") String category);
-	
-	
 	
 	*/
 	
