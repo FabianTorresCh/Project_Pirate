@@ -55,4 +55,23 @@ public class controller_sale_report {
 		obj_repository_sale_report.deleteById(sale_report_by_invoice_id);
 		return "DELETE SALE REPORT BY INVOICE ID: ["+sale_report_by_invoice_id+"]";
 	}
+	
+	
+	
+	
+	
+	/*
+	@Query("{'active':true}")
+List<Book> findAll();
+
+@Query("{'author' : ?0, 'category' : ?1}")
+List<Book> findPositionalParameters(String author, String category);
+
+@Query("{'author' : :#{#author}, 'category' : :#{#category}}")
+List<Book> findNamedParameters(@Param("author") String author, @Param("category") String category);
+	
+	
+	
+	*/
+	
 }

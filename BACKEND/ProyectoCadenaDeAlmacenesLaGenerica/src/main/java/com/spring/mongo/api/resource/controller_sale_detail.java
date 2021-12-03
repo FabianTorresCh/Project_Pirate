@@ -56,5 +56,6 @@ public class controller_sale_detail {
 		obj_repository_sale_detail.deleteById(s_d_by_operation_number);
 		return "DELETE SALE DETAIL BY ID: ["+s_d_by_operation_number+"]";
 	}
+
 	
 }
