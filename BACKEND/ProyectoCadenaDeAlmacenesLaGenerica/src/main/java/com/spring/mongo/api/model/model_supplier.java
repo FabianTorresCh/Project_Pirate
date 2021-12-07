@@ -14,13 +14,13 @@ import lombok.ToString;
 public class model_supplier {
 
 	// ELEMENT MODEL
-	private long id;
-	private int supplier_nit_digit;
-	private String supplier_namefull;
-	private String supplier_address;
-	private String supplier_email;
-	private int supplier_phone;
-	private String supplier_type;
+	private long id; // SUPLIER ID OR NIT
+	private int supplier_nit_digit; // SUPLIER NIT DIGIT
+	private String supplier_namefull; // SUPLIER NAME FULL
+	private String supplier_address; // SUPLIER ADDRESS
+	private String supplier_email; // SUPLIER EMAIL
+	private int supplier_phone; // SUPLIER PHONE
+	private String supplier_type; // SUPLIER TYPE 
 	
 	// SET AND GET
 	public long getId() {

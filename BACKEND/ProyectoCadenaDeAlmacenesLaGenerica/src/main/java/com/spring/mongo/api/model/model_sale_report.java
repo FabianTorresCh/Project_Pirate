@@ -15,11 +15,11 @@ public class model_sale_report {
 
 	// ELEMENT MODEL
 	private long id; // SALE DETAIL ID (sale_invoice_id)
-	private String s_report_sale_date;
-	private int s_report_store_id;
-	private long s_report_user_id;
-	private int s_report_customer_id;
-	private double s_report_sale_total;
+	private String s_report_sale_date; // // SALE DATE BY SALE DETAIL
+	private int s_report_store_id; // STORE ID BY SALE DETAIL
+	private long s_report_user_id; // USER ID BY SALE DETAIL
+	private int s_report_customer_id; // CUSTOMER ID BY SALE DETAIL
+	private double s_report_sale_total; // SALE TOTAL BY SALE DETAIL
 	
 	// SET AND GET
 	public long getId() {

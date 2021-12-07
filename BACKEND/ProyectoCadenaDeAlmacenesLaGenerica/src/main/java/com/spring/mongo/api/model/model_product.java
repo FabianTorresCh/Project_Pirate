@@ -14,12 +14,12 @@ import lombok.ToString;
 public class model_product {
 	
 	// ELEMENT MODEL
-	private long id;
-	private String nombre_producto;
-	private long nit_proveedor;
-	private double precio_compra;
-	private double iva_compra;
-	private double precio_venta;
+	private long id; // PRODUCT ID
+	private String nombre_producto; // PRODUCT NAME FULL
+	private long nit_proveedor; // SUPPLIER ID
+	private double precio_compra; // PRICE BUY
+	private double iva_compra; // IVA
+	private double precio_venta; // PRICE SALE
 	
 	// SET AND GET
 	public long getId() {

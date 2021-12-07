@@ -4,12 +4,12 @@ package com.spring.mongo.api.model;
 public class model_sale_operation {
 
 	// ELEMENT MODEL
-	private long sale_product_id;
-	private String sale_product_name;
-	private double sale_product_price_buy;
-	private double sale_product_iva;
-	private double sale_product_price_sale;
-	private double sale_produc_quantity;
+	private long sale_product_id; // PRODUCT ID
+	private String sale_product_name; // PRODUCT NAME FULL
+	private double sale_product_price_buy; // PRODUCT PRICE BUY
+	private double sale_product_iva; // IVA
+	private double sale_product_price_sale; // PRODUCT PRICE SALE
+	private double sale_produc_quantity; // QUANTITY PRODUCT
 	
 	// CONSTRUCTOR 
 	public model_sale_operation(

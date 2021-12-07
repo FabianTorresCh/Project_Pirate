@@ -17,12 +17,12 @@ public class model_sale_detail {
 	
 	// ELEMENT MODEL
 	private long id; // INVOICE NUMBER, CODE OR ID
-	private String sale_date;
-	private int sale_store_id;
-	private long sale_user_id;
-	private int sale_customer_id;
-	private ArrayList<model_sale_operation> list_sale_operation = new ArrayList <model_sale_operation>();
-	private double sale_total;
+	private String sale_date; // INVOICE DATE TRANSACTION
+	private int sale_store_id; // STORE ID BY BILLING
+	private long sale_user_id; // USER ID BY BILLING
+	private int sale_customer_id; // CUSTOMER ID BY BILLING
+	private ArrayList<model_sale_operation> list_sale_operation = new ArrayList <model_sale_operation>(); // MODEL SALE OPERATION
+	private double sale_total; // SALE TOTAL
 	
 	// SET AND GET
 	public ArrayList<model_sale_operation> getList_sale_operation() {

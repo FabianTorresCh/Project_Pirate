@@ -14,11 +14,11 @@ import lombok.ToString;
 public class model_customer {
 
 	// ELEMENT MODEL
-	private int id;
-	private String customer_namefull;
-	private String customer_address;
-	private int customer_phone;
-	private String customer_email;
+	private int id; // CUSTOMER ID
+	private String customer_namefull; // CUSTOMER FULL NAME
+	private String customer_address; // CUSTOMER ADDRESS
+	private int customer_phone; // CUSTOMER PHONE
+	private String customer_email; // CUSTOMER EMAIL
 	
 	// SET AND GET
 	public int getId() {

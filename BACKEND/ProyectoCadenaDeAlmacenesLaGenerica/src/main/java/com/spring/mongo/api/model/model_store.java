@@ -15,11 +15,11 @@ public class model_store {
 
 	// ELEMENT MODEL
 	private int id; // STORE ID
-	private String store_namefull;
-	private String store_city;
-	private String store_address;
-	private String store_email;
-	private int store_phone;
+	private String store_namefull; // STORE NAME FULL
+	private String store_city; // STORE CITY
+	private String store_address; // STORE ADDRESS
+	private String store_email; // STORE EMAIL
+	private int store_phone; // STORE PHONE
 	
 	// SET AND GET
 	public int getId() {

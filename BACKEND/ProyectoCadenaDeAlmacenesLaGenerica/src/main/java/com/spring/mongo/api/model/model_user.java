@@ -14,11 +14,11 @@ import lombok.ToString;
 public class model_user {
 	
 	// ELEMENT MODEL
-	private long id;
-	private String email_usuario;
-	private String nombre_usuario;
-	private String password;
-	private String usuario;
+	private long id; // USER ID
+	private String email_usuario; // USER EMAIL
+	private String nombre_usuario; // USER NAME FULL
+	private String password; // USER PASSWORD
+	private String usuario; // USER TYPE
 	
 	// SET AND GET
 	public long getId() {
